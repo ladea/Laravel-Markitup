@@ -30,13 +30,17 @@ You can also choose which theme you will use for your textarea editors.
 ## Usage
 
 Give your textarea declaration a class that corresponds to one of the markup sets from bundle config file
+
 ```php
 echo Form::textarea('somename', 'someinput', array('class' => 'markdown'));
 ```
+
 or
+
 ```html
 <textarea class="html" name="somename" rows="10" cols="50">someinput</textarea>
 ```
+
 You can use more than one markup set. Declare all sets that you want to use in bundle config file
 
 You will also have to output all assets from "footer" asset container somewhere in your layout. A good place is just before closing body tag
